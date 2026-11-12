@@ -106,8 +106,8 @@
   // Never carry a previous phase's countdown/status into a new phase.
   gameMessage('');
   if(s.phase==='answering'){
-   if(s.myAnswerSubmitted){$('online-wait-answer').hidden=false;gameMessage('Your answer is submitted. Waiting for everyone else…');}
-   else{$('online-answer-form').hidden=false;gameMessage('Submit your answer to continue.');}
+   if(s.myAnswerSubmitted){$('online-wait-answer').hidden=false;gameMessage('');}
+   else{$('online-answer-form').hidden=false;gameMessage('');}
   }else if(s.phase==='voting'){
    const answer=(s.answers||[])[0];
    if(answer){$('online-answer-card').hidden=false;$('online-answer-card').textContent=answer.text||'Answer unavailable';}

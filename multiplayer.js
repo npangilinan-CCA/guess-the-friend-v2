@@ -123,7 +123,7 @@
     $('online-wait-vote').className='online-wait is-turn-wait';
     const activeVoter='another player';
     $('online-wait-vote').textContent='Waiting for '+activeVoter+' to finish voting…';
-    gameMessage('Waiting for '+activeVoter+' to finish voting. Your timer has not started.');
+    gameMessage('');
    }else{
     $('online-wait-vote').className='online-wait';
     renderVoteChoices(s);$('online-vote-form').hidden=false;updateDeadline(s);
